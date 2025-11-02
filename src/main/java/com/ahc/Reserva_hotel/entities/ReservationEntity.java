@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @Entity
 @Table(name="reservation")
@@ -29,8 +28,7 @@ public class ReservationEntity {
 
     //Relation ManytoOne
     @ManyToOne
-    @JoinColumn(name="id_room")
+    @JoinColumn(name="id_room",nullable = false)
     private RoomEntity room;
-
 
 }

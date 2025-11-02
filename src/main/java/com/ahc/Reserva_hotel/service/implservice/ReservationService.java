@@ -27,7 +27,7 @@ public class ReservationService implements IReservationService {
                 .map(r->new ReservationDTO(
                         r.getId(),
                         r.getCustomer(),
-                        r.getCheckoutDate(),
+                        r.getCheckinDate(),
                         r.getCheckoutDate(),
                         r.getRoom().getNumber())).toList();
     }
